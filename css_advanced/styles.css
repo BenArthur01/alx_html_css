@@ -1,20 +1,33 @@
+/* BODY */
 body {
   margin: 0;
+  line-height: 1.0;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fff;
   color: #333;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+
+/* HEADINGS */
+header {
+  background: transparent; /* so you see the background through it */
+  position: absolute; /* take it out of normal flow */
+  top: 0;
+  left: 0;
+  width: 90%; /*Stretch across page */
+  z-index: 2; /* it ensures it sits above the section */
+  padding: 20px 40px;
+}
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
 
-header {
-  background-color: #111;
-  color: #fff;
-  padding: 1rem 0;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .nav-links {
@@ -23,33 +36,142 @@ header {
   list-style: none;
 }
 
-.hero {
-  text-align: center;
-  padding: 4rem 0;
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
 }
 
+/* MAIN */
+/* SECTION: HERO */
+.hero {
+  text-align: center;
+  padding-top: 150px;
+  background: url(Project\ Images/object.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 9rem;
+    font-weight: bolder;
+    padding-top: 430px;
+    margin-bottom: 0.5rem;
+    margin-top: 18rem;
+} 
+
+.spans-row {
+    display: flex;
+    color: #fff; /* it adjusts based on the background */
+    font-weight: bold;
+    padding: 0rem 15rem 0rem;
+    font-size: 1.2rem;
+    justify-content: space-between; /* even spacing */
+    text-transform: uppercase;
+    align-items: center;
+    max-width: 300px;
+}
+
+.cta-button {
+    background-color: #C271FF;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 70px;
+    cursor: pointer;
+    margin-top: 3rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3); /*soft shadow */
+    transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.section-title {
+    font-weight: 300; /* Thin for the default text*/
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.span-color {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.instructors {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 9rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.instructor-card {
+    flex: 1 1 110px;
+    max-width: 450px;
+    color: #fff;
+}
+
+.instructor-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.instructor-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.instructor-card p {
+    font-size: 0.9rem;
+    font-style: italic;
+    line-height: 0.9;
+}
+
+
+/* SECTION: TESTIMONIAL */
 .testimonial {
-  background-color: #6a0dad;
+  background-color: #C271FF;
   color: #fff;
   padding: 2rem;
   text-align: center;
 }
 
+/* SECTION: TUTORIAL-VIDEOS */
 .tutorials .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 
+/* SECTION: MEMBERSHIP  */
 .membership ul {
   list-style: none;
   padding: 0;
 }
 
+/* SECTION: FAQ */
 .faq-container {
   margin-bottom: 1rem;
 }
 
+/* FOOTER */
 .footer-container {
   background-color: #111;
   color: #fff;
