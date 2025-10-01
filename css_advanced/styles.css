@@ -187,12 +187,17 @@ blockquote {
 
 
 /* SECTION: TUTORIALS */
-.tutorials .cards {
+.tutorials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 
+.tutorials h2 {
+    text-align: center;
+    padding: 40px;
+    font-weight: 300;
+}
 .video-card {
     width: 250px;
     background-color: #fff;
@@ -259,10 +264,48 @@ blockquote {
     font-weight: 500;
     padding-left: 10%;
 }
+
+
 /* SECTION: MEMBERSHIP  */
-.membership ul {
-  list-style: none;
-  padding: 0;
+.membership {
+  color: #fff;
+  background-color: #071629;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.membership h2 {
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.benefit-card {
+    flex: 1 1 250px;
+    background-color: transparent;
+    padding: 1rem;
+    text-align: center;
+}
+
+.benefit-card img {
+    width: 50px;
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+    font-size: 0.9rem;
+    color: #ccc;
 }
 
 /* SECTION: FAQ */
