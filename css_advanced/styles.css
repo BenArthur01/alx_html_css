@@ -309,12 +309,45 @@ blockquote {
 }
 
 /* SECTION: FAQ */
-.faq-container {
-  margin-bottom: 1rem;
+.faq {
+  background-color: #fff;
+  padding: 4rem 1rem;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  text-align: center;
 }
 
+.faq h2 {
+    font-size: 3.5rem;
+    font-family: 'Source Sans Pro';
+    font-weight: 150;
+    color: #111;
+    margin-bottom: 3rem;
+}
+
+.questions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.questions h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+}
+
+.faq-item {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+
 /* FOOTER */
-.footer-container {
+.footer {
   background-color: #111;
   color: #fff;
   padding: 2rem 0;
