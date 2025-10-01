@@ -2,7 +2,7 @@
 body {
   margin: 0;
   line-height: 1.0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', spincycle-OT;
   background-color: #fff;
   color: #333;
 }
@@ -149,9 +149,43 @@ header {
 .testimonial {
   background-color: #C271FF;
   color: #fff;
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem 1rem;
+  text-align: left;
 }
+
+.quote {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.quote-image {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+
+.attribution {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding-left: 10px;
+}
+
+.role {
+    font-weight: 400;
+    font-style: italic;
+    color: #fff; /* Lighter accent for role */
+}
+
 
 /* SECTION: TUTORIAL-VIDEOS */
 .tutorials .cards {
