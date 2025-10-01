@@ -347,13 +347,37 @@ blockquote {
 
 
 /* FOOTER */
-.footer {
-  background-color: #111;
+.site-footer {
+  background-color: #071629;
   color: #fff;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.social-icons {
+    color: #fff;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons:hover {
+    color: #C271FF;
+}
+
 .footer-p {
-    color: #ffffff;
+    color: #666;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    text-align: center;
 }
