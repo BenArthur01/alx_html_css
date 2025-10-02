@@ -364,14 +364,14 @@ blockquote {
     padding-bottom: 1rem;
 }
 
-.social-icons {
+.social-icons a {
     color: #fff;
-    margin-left: 4rem;
+    margin-left: 1rem;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
-.social-icons:hover {
+.social-icons a:hover {
     color: #C271FF;
 }
 
